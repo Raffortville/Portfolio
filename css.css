@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke !important;
+    overflow-y: hidden;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+.green {
+    
+    color: rgb(00, 255, 130);
+}
+
+.violet {
+    color:  rgb(132, 0, 255); 
+}
+
+.rose {
+  color:  rgb(255, 0, 106);
+}
+
+
+.keyW {
+
+    color: rgb(00, 255, 130);
+    font-weight: 600;
+}
+
+.removeLinkStyle {
+
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.removeLinkStyleLink {
+
+    color:  rgb(00, 255, 130);
+    text-decoration: inherit;
+}
+
+.styleLink {
+
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 1px 5px 1px 5px;
+}
+
+.removeLinkStyleLink:hover {
+
+    color: inherit;
+    text-decoration: inherit;
+    color:whitesmoke;
+}
+
+.styleLink:hover {
+
+    border: rgb(00, 255, 130) 2px solid;
+}
+
+
+.removeLinkStyle:hover {
+
+    color: inherit;
+    text-decoration: inherit;
+    color: rgb(00, 255, 130);
+}
+
+.backGround {
+
+    height: 100vh;
+    width: 100%;
+    background: rgba(5, 14, 27, 0.9);
+    background: radial-gradient(circle, rgba(148, 133, 175, 0.2) 10%, rgba(54, 54, 54, 0.9) 30%),url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: grey 1px solid;
+}
+
+
+.backGroundAboutMe {
+
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.7);
+}
+
+
+.borderTest {
+
+    border: 1px solid black;
+}
+
+.wrapBurger{
+    cursor: pointer ;
+    margin-left: 98.5%;
+    position: fixed;
+    z-index: 2;
+    left: -20px;
+    padding-top: 10px;
+}
+
+.burgerLine1 {
+
+    width: 30px;
+    border-bottom: whitesmoke 3px solid;
+    margin-bottom: 5px;
+    height: 7px;
+    transition: width 0.1s;
+}
+
+.burgerLine2 {
+
+    width: 30px;
+    border-bottom: whitesmoke 3px solid;
+    margin-bottom: 5px;
+    height: 7px;
+    transition: width 0.3s;
+}
+
+.burgerLine3 {
+
+    width: 30px;
+    border-bottom: whitesmoke 3px solid;
+    margin-bottom: 5px;
+    height: 7px;
+    transition: width 0.5s;
+}
+
+.burgerLine1Effet{
+
+    background-color: rgb(00, 255, 130) ;
+    width : 7px;
+    height: 7px;
+    border-bottom: 0;
+    border-radius: 50%;
+}
+.burgerLine2Effet{
+
+    background-color:  rgb(132, 0, 255);
+    width : 7px;
+    height: 7px;
+    border-bottom: 0;
+    border-radius: 50%;
+}
+.burgerLine3Effet{
+
+    background-color: rgb(255, 0, 106) ;
+    width : 7px;
+    height: 7px;
+    border-bottom: 0;
+    border-radius: 50%;
+}
+
+.wrapName {
+
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.outterAbout {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.wrapContact {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.wrapAbout {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.wrapAboutMe {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.cardBody {
+
+    padding: 3px 20px;
+    padding-top: 7px;
+
+}
+
+.titre {
+
+    color: blanchedalmond;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.titreAbout {
+
+    color: whitesmoke;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+}
+
+.titreNom {
+
+    color: rgb(00, 255, 130) ;
+    margin-left: 10px;
+    opacity: 0.9;   
+}
+
+.wrapBallon {
+
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.wrapBallonAbout {
+
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.ballon {
+
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(00, 255, 130) ;
+    height: 28px;
+    width: 28px;
+    opacity: 0.5;
+}
+
+.ballon1{
+
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(132, 0, 255) ;
+    height: 28px;
+    width: 28px;
+    opacity: 0.8;
+    margin-left: 15px;
+}
+
+.ballon2 {
+
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(255, 0, 106) ;
+    height: 28px;
+    width: 28px;
+    opacity: 0.8;
+    margin-left: 15px;
+}
+
+.souTitre {
+
+    color: blanchedalmond;
+    margin-left: 60px;
+}
+
+
+.navMenu {
+    list-style: none;
+    margin-top: 0;
+    transition: margin-top 1.5s;
+    position: fixed;
+    z-index: 2;
+}
+
+.marginTopNav {
+
+    margin-top: 100px;
+}
+
+.navLink {
+
+    opacity: 0;
+    transition-duration: 0.7s;
+}
+
+.navLinkEffet {
+
+    font-size: 1.8em;
+    margin-top: 15px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition-duration: 0.8s;
+}
+
+.titreBio {
+
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.carouselControl1 {
+
+  position: absolute;
+  top: -200px;
+  left: -25px;
+}
+
+.carouselControl2 {
+
+  position: absolute;
+  top: -200px;
+  left:515px
+    
+}
+
+.wrapArrow {
+
+    position: absolute;
+    bottom: 190px;
+}
+
+
+.mediaCar {
+
+    display: block;
+    height: 300px;
+    width: 95%;
+}
