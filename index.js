@@ -8,14 +8,12 @@ const burger3 = document.getElementById('burger3')
 const navMenu = document.getElementById('navMenu')
 const navLinks = document.querySelectorAll('.navLink')
 const titreNom = document.getElementById("titreNom")
-const titreAbout = document.getElementById('titreAbout')
+
 let burgerEffet = false
 
 burger.addEventListener("click", (e) => {effetMenuBurger()})
 
 titreNom.addEventListener("click", (e) => effetMenuBurger())
-
-titreAbout.addEventListener('click', () => effetMenuBurger())
 
 
 const effetMenuBurger = () => {
@@ -49,15 +47,28 @@ const effetMenuBurger = () => {
 // mark anchor nav menu //
 
 const links = document.querySelectorAll(".removeLinkStyle")
-let currentPage;
+const titreAbout = document.querySelectorAll('.titreAbout')
+
+titreAbout.forEach(titre => titre.addEventListener('click', (e)=> { 
+
+    let currentPage = titre.id; 
+    effetMenuBurger()
+    markAnchorNavMenu(currentPage)
+
+}))
 
 links.forEach(link => {
 
     link.addEventListener('click', (e) => {
 
-        currentPage = e.target.innerHTML
-
-       links.forEach(link => link.innerHTML === currentPage ? link.style.color='rgb(00, 255, 130) ': link.style.color="inherit" )
-       
+       let currentPage  = e.target.innerHTML
+        markAnchorNavMenu(currentPage)
     })
 })
+
+
+const markAnchorNavMenu = (currentPage) => {
+
+    links.forEach(link => {link.innerHTML === currentPage ? link.style.color='rgb(00, 255, 130) ': link.style.color="inherit" })
+}
+
