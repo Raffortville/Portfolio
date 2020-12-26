@@ -1,5 +1,12 @@
 
-//  effet  burger & modal nav menu displat  ////
+// effect onLoad //
+
+const backGround = document.querySelector('.backGround')
+
+window.addEventListener('load', () => backGround.classList.add("backGroundTransform"));
+    
+
+//  effet  burger & modal nav menu display  ////
 
 const burger = document.getElementById('burger')
 const burger1 = document.getElementById('burger1')
