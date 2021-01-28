@@ -1,10 +1,22 @@
 
 // effect onLoad //
 
-const backGround = document.querySelector('.backGround')
+const backGround = document.querySelector('.backGround');
+const ball0 = document.querySelector('.ballon');
+const ball1 = document.querySelector('.ballon1')
+const ball2 = document.querySelector('.ballon2')
 
 window.addEventListener('load', () => backGround.classList.add("backGroundTransform"));
+
+window.addEventListener('load',() => {
+ 
+    addEffectClass(ball0,"effect");
+    addEffectClass(ball1,"effect");
+    addEffectClass(ball2,"effect");
+
+});
     
+const addEffectClass = (elmt,classEffect) => elmt.classList.add(classEffect)
 
 //  effet  burger & modal nav menu display  ////
 

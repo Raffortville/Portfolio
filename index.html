@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/c3d7b83b32.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Portfolio / CV</title>
   </head>
@@ -19,7 +20,7 @@
                 </div>
                 <section class="d-flex">
                   <div class="wrapName col-md-8">
-                      <div class="wrapBallon">
+                      <div class="wrapBallon"> 
                         <div class="ballon"></div>
                         <div class="ballon1"></div>
                         <div class="ballon2"></div>
@@ -28,14 +29,15 @@
                         <h1 class="titre">Raffi<span class="titreNom">Haycan</span></h1>
                       </div>
                       <div>
-                        <h5 class="souTitre">Javascript Web Devlopper</h5>
+                        <h5 class="souTitre">Devloppeur Front-end</h5>
+                        <h6 class="souTitre">Javascript-React JS</h6>
                       </div>
                   </div>
                   <nav class="col-md-4 nav" >
                       <ul id="navMenu" class='navMenu'>
-                        <li class="navLink"> <a class="removeLinkStyle" href="#home">HOME</a></li>
-                        <li class="navLink"><a class="removeLinkStyle" href="#aboutMe">ABOUT ME</a></li>
-                        <li class="navLink"><a class="removeLinkStyle" href="#aboutProjects">ABOUT MY PROJECTS</a></li>
+                        <li class="navLink"><a class="removeLinkStyle" href="#home">ACCUEIL</a></li>
+                        <li class="navLink"><a class="removeLinkStyle" href="#aboutMe">MON PARCOURS</a></li>
+                        <li class="navLink"><a class="removeLinkStyle" href="#aboutProjects">MES PROJETS</a></li>
                         <li class="navLink"><a class="removeLinkStyle" href="#contact">CONTACT</a></li>
                       </ul>
                   </nav>
@@ -46,24 +48,31 @@
         <div class="row">
           <div class="outterAbout">
               <div class="wrapAboutMe col-md-7">
-                <div class="wrapBallonAbout">
+                <div class="d-flex align-items-center">
+                <div class="wrapBallonAbout mr-3" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                   <div class="ballon"></div>
                   <div class="ballon1"></div>
                   <div class="ballon2"></div>
                 </div>
-                <div id="titreAbout">
-                  <h1 id="ABOUT ME" class="titreAbout">About<span class="titreNom">Me</span></h1>
+                <div id="titreAbout" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                  <h1 id="ABOUT ME" class="titreAbout">Mon<span class="titreNom">Parcours</span></h1>
                 </div>
-                <div>
-                  <p class="card-text">Passionate about Web Devlopement, I am a <span class="keyW">Junior Front-end Devloper</span>. I achieve a fully online course about <span class="keyW">Javascript</span> program with OpenClassroom.</p>
-                  <p class ="card-text">After a good learning and mastering of the basics of <span class="keyW">HTML/CSS</span> and 
-                  <span class="keyW">Javascript</span>, I deepened my knowledge of Javavascript building some personnals web application with <span class="keyW">React Js</span> and <span class="keyW"> Vue js</span></p>
-                  <p class="card-text">As backend I have a deep knowledge of <span class="keyW">Firebase</span> and a good knowledge of<span class="keyW"> Node Js</span>, however my goal is to mastering Node js and become a full stack devloper</p>
+              </div>
+                <div> 
+                  <p class="card-text">Passionné par le monde du web, je suis un <span class="keyW">Développeur Front-end junior.</span> 
+                    Mon diplôme acquis suite à la formation d' OpenClassroom, m'a donné des bases solides en programmation 
+                    coté client avec les basiques <span class="keyW">HTML/CSS</span> et <span class="keyW">Javascript.</span></p>
+                  <p class="card-text">Mes projets web en tant que Free lance m'ont permis de développer mes acquis en tant qu'intégrateur web et développeur d'applications ( single web App ) avec <span class="keyW">React Js</span> et <span class="keyW"> Vue js.</span></p>
+                  <p class="card-text">Mon investissement et mon intérêt dans le domaine de la programmation web m'ont conduit à étendre mes compétences coté Back end. En construisant des <span class="keyW"> API sur Node </span> et  en utilisant la base de données <span class="keyW">MongoDb;</span> mais surtout en approfondissant la maîtrise des micro services comme <span class="keyW">Firebase, Firestore et Cloud storage</span></p>
                 </div>
                 <div class="d-flex mt-3" >
-                  <div class="card mb-3" style="max-width: 13rem;">
+                  <div class="card mb-3" style="max-width: 20rem;" data-aos="flip-left">
                     <div class="cardBody text-dark">
-                      <h4 class="card-title violet">Technical skills</h4>
+                      <h4 class="card-title violet">Compétences techniques</h4>
                         <div class="d-flex align-items-baseline"><p style="font-size: 1em;">HTML/CSS</p> <i class="ml-1 fas fa-star rose"></i><i class="fas fa-star rose"></i><i class=" rose fas fa-star"></i><i class=" rose fas fa-star"></i></div>
                         <div class="d-flex align-items-baseline"><p style="font-size: 1em;">Javascript</p> <i class=" ml-1 fas fa-star rose"></i><i class="fas fa-star rose"></i><i class=" rose fas fa-star"></i><i  class=" rose far fa-star"></i></div>
                         <div class="d-flex align-items-baseline"><p style="font-size: 1em;">React Js</p><i class=" ml-1 fas fa-star rose"></i><i class="fas fa-star rose"></i><i class=" rose fas fa-star"></i><i  class=" rose far fa-star"></i></div>
@@ -71,20 +80,20 @@
                         <div class="d-flex align-items-baseline"><p style="font-size: 1em;">Firebase</p> <i class="ml-1 fas fa-star rose"></i><i class="fas fa-star rose"></i><i class=" rose fas fa-star"></i><i  class=" rose far fa-star"></i></div>
                         <div class="d-flex align-items-baseline"><p style="font-size: 1em;">Node Js</p><i class="ml-1 fas fa-star rose"></i><i class="fas fa-star rose"></i><i class=" rose far fa-star"></i><i  class=" rose far fa-star"></i></div>
                     </div>
-                  </div>
-                  <div class="card  mb-3 ml-4" style="max-width: 13rem;"> 
+                  </div>  
+                  <div class="card  mb-3 ml-4" style="max-width: 15rem;" data-aos="flip-right"> 
                     <div class="cardBody text-dark">
-                      <h4 class="card-title violet">Soft skills</h4>
-                      <p class="card-text"><span style="font-weight: 600;"> Languages</span> : Armenian, French, English</p>
-                      <p class="card-text"><span style="font-weight: 600;">Self-Motivation</span></p>
-                      <p class="card-text"><span style="font-weight: 600;">Communication</span></p>
-                      <p class="card-text"><span style="font-weight: 600;">Listening</span></p>
-                      <p class="card-text"><span style="font-weight: 600;">Responsability</span></p>
+                      <h4 class="card-title violet">Autres</h4>
+                      <p class="card-text"><span style="font-weight: 600;"> Langues</span> : Anglais,arménien</p>
+                      <p class="card-text"><span style="font-weight: 600;">Autonomie</span></p>
+                      <p class="card-text"><span style="font-weight: 600;">Capacité d'écoute</span></p>
+                      <p class="card-text"><span style="font-weight: 600;">Consciencieux</span></p>
+                      <p class="card-text"><span style="font-weight: 600;">Curieux et Passionné</span></p>
                     </div>
                   </div>
                 </div>
               </div> 
-              <div class="col-md-5 backGround">
+              <div class="col-md-5 backGroundTransform" >
               </div>
             </div>
           </div> 
@@ -94,13 +103,17 @@
           <div class="outterAbout">
               <div class="wrapAbout col-md-7">
                 <div class="d-flex align-items-center">
-                  <div class="wrapBallon mr-2">
+                  <div class="wrapBallon mr-3" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
                     <div class="ballon"></div>
                     <div class="ballon1"></div>
                     <div class="ballon2"></div>
                   </div>
-                  <div id="titreProject">
-                    <h1 id="ABOUT MY PROJECTS" class="titreAbout">About<span class="titreNom">Projects</span></h1>
+                  <div id="titreProject" data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                    <h1 id="ABOUT MY PROJECTS" class="titreAbout">Mes<span class="titreNom">Projets</span></h1>
                   </div>
                 </div>  
                 <div class="d-flex  mt-3  ml-5">
@@ -118,8 +131,7 @@
                           Material Ui<br>
                           Firebase<br>
                           <div>
-                            <a class=" removeLinkStyleLink styleLink" target="_blank" href=" https://raffortville.github.io/WeddEasy/"> See live</a>
-                            <span style="font-size: 0.7em;">Web app completed at 80%</span>
+                            <a class=" removeLinkStyleLink styleLink" target="_blank" href=" https://raffortville.github.io/WeddEasy/"> Voir app</a>
                           </div>
                         </p>
                         </div>
@@ -134,7 +146,7 @@
                           Vuetify<br>
                           Firebase<br>
                           <div>
-                            <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Vue-Meeting-Point/"> See live</a>
+                            <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Vue-Meeting-Point/"> Voir app</a>
                           </div>
                         </p>
                         </div>
@@ -145,12 +157,12 @@
                         <div>
                             <h4>Web Page Football team statistiks</h4>
                             <h5>Technologies</h5>
-                            <p>HTML/CSS/ Pure Javascript<br>
-                            MyChart.js library for charts<br>
+                            <p>HTML/CSS/ Vanilla Javascript<br>
+                            MyChart.js library pour les graphiques<br>
                             Api football-data.org<br>
                             <br>
                             <div>
-                              <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Practice-JS-API-Football-team-web-app-/"> See live</a>
+                              <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Practice-JS-API-Football-team-web-app-/">Voir app</a>
                             </div>
                             </p>
                         </div>
@@ -158,14 +170,14 @@
                       <div class="carousel-item" data-interval="2000">
                         <a target="_blank" href="https://raffortville.github.io/Test-Todo-React/"><img src="assets/TodoMern.png" class="mediaCar" alt="..."></a>
                         <div>
-                          <h4>Todo MERN fullstack project</h4>
+                          <h4>Todo MERN fullstack projet</h4>
                           <h5>Technologies</h5>
                           <p>React/Node/MondoDb<br>
                           Redux<br>
                           Material UI<br>
-                          Express for REST API<br>
+                          Express pour l'API Rest<br>
                           <div>
-                            <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Test-Todo-React/"> See live</a>
+                            <a class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Test-Todo-React/">Voir app</a>
                           </div>
                         </p>
                         </div>
@@ -174,12 +186,12 @@
                         <a target="_blank" href="https://raffortville.github.io/Practice-HTML-CSS-JS-E-commerce-project/">
                           <img src="assets/screenshotGata.png" class="mediaCar" alt="..."></a>
                         <div>
-                          <h4>Web Site e-store shopping cart</h4>
-                          <span>Practice web site</span>
+                          <h4>E-boutique avec panier d'achat</h4>
+                          <span>Pratique</span>
                           <h5>Technologies</h5>
-                          <p>HTML/CSS/ Pure Javascript<br>
+                          <p>HTML/CSS/ Vanilla Javascript<br>
                           Bootstrap<br>
-                          Aos Library for css<br>
+                          Aos Library pour les animations<br>
                           <div>
                             <a  class="styleLink removeLinkStyleLink" target="_blank" href="https://raffortville.github.io/Practice-HTML-CSS-JS-E-commerce-project/"> See live</a>
                           </div>
@@ -199,40 +211,49 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-md-5 backGroundTransform">
               </div>  
         </div> 
       </section>
       <section id="contact" class="container-fluid backGroundAboutMe">
         <div class="row">
           <div class="outterAbout">
-              <div class="wrapAbout col-md-6">
-                <div class="wrapBallon">
+              <div class="wrapAbout col-md-7" >
+                <div class="wrapBallon" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">  
                   <div class="ballon"></div>
                   <div class="ballon1"></div>
                   <div class="ballon2"></div>
                 </div>
-                <div id="titreContact">
-                  <h1 id="CONTACT" class="titreAbout">Contact<span class="titreNom">Me</span></h1>
+                <div id="titreContact" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                  <h1 id="CONTACT" class="titreAbout">Me<span class="titreNom">Contacter</span></h1>
                 </div>
                 <div class="wrapBio">
-                  <div class="card border-secondary mt-5" style="max-width: 25rem;">
+                  <div class="card border-secondary mt-5" style="max-width: 25rem;" data-aos="flip-left">
                     <div class="card-body text-secondary">
-                      <h5 class="card-title">Lastname :<span style="font-weight: 600" class="text-dark"> Haycan</span></h5>
-                      <h5 class="card-title">Firstname :<span style="font-weight: 600" class="text-dark"> Raffi</span></h5>
-                      <h5 class="card-title">City :<span style="font-weight: 600" class="text-dark"> Yerevan</span></h5>
-                      <h5 class="card-title">Phone :<span style="font-weight: 600" class="text-dark"> 098 25 49 94</span></h5>
+                      <h5 class="card-title">Nom :<span style="font-weight: 600" class="text-dark"> Haycan</span></h5>
+                      <h5 class="card-title">Prénom :<span style="font-weight: 600" class="text-dark"> Raffi</span></h5>
+                      <h5 class="card-title">Ville :<span style="font-weight: 600" class="text-dark"> Paris</span></h5>
+                      <h5 class="card-title">Mobile :<span style="font-weight: 600" class="text-dark"> 07 73 13 01 31</span></h5>
                       <h5 class="card-title">Mail : <a  href="mailto: raffihaycan@gmail.com"><span style="font-weight: 600" class="text-dark">raffihaycan@gmail.com</span></h5></a>
-                      <h5 class="card-title">Link Git hub : <a href="https://github.com/Raffortville"><span style="font-weight: 600" class="text-dark">github.com/Raffortville</span></h5></a>
+                      <h5 class="card-title">Lien Git hub : <a href="https://github.com/Raffortville"><span style="font-weight: 600" class="text-dark">github.com/Raffortville</span></h5></a>
+                      <h5 class="card-title">Lien LinkedIn : <a href="https://www.linkedin.com/in/raffi-haycan-511714204/"><span style="font-weight: 600" class="text-dark">LindedIn</span></h5></a>
                     </div>
                   </div>
                 </div>
               </div> 
-              <div class="col-md-6 backGround">
+              <div class="col-md-5 backGroundTransform">
               </div>
             </div>
           </div> 
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="index.js"></script> 
