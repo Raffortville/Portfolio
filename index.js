@@ -2,18 +2,58 @@
 // effect onLoad //
 
 const backGround = document.querySelector('.backGround');
+const titre = document.querySelector('.titreNom')
 const ball0 = document.querySelector('.ballon');
-const ball1 = document.querySelector('.ballon1')
-const ball2 = document.querySelector('.ballon2')
+const ball1 = document.querySelector('.ballon1');
+const ball2 = document.querySelector('.ballon2');
+const souTitre = document.querySelectorAll(".souTitre");
+const line = document.querySelector('.line')
+const round = document.querySelector('.round')
 
 window.addEventListener('load',() => {
+
+    setTimeout(() => {
+
+        addEffectClass(line,"lineEffect")
+        addEffectClass(round,"roundEffect")
  
-    addEffectClass(ball0,"effect");
-    addEffectClass(ball1,"effect");
-    addEffectClass(ball2,"effect");
+    }, 1000);
+
+    setTimeout(() => {
+
+        addEffectClass(ball0,"effect");
+        addEffectClass(ball1,"effect");
+        addEffectClass(ball2,"effect");
+      
+        addEffectClass(round,'borderRoundEffect')
+        souTitre.forEach(elmt => addEffectClass(elmt,'effectScale'))
+
+        
+    }, 2000);
+ 
     addEffectClass(backGround,"backGroundTransform");
 
+    infiniteEffect(titre,"titreNomEffet",1800,2000);
+
+    
 });
+
+
+const infiniteEffect = (elmt,classEffect,removeTime,addTime) => {
+
+    setInterval(() => {
+
+        elmt.classList.add(classEffect)
+        
+    }, addTime);
+
+    setInterval(() => {
+
+        elmt.classList.remove(classEffect)
+        
+    }, removeTime);
+
+}
     
 const addEffectClass = (elmt,classEffect) => elmt.classList.add(classEffect)
 
@@ -41,6 +81,8 @@ const effetMenuBurger = () => {
         burger1.classList.add('burgerLine1Effet')
         burger2.classList.add('burgerLine2Effet')
         burger3.classList.add('burgerLine3Effet')
+
+        addEffectClass(burger1,'effect')
     
         navLinks.forEach(link => {link.classList.replace('navLink',"navLinkEffet")})
     
