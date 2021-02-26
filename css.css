@@ -4,6 +4,17 @@
     src:url('/Righteous-Regular.ttf') format('truetype');
 }
 
+
+.textP {
+
+    font-size: 1.1em !important;
+}
+
+.borderTest {
+
+    border:  1px solid blanchedalmond;
+}
+
 body {
 
     margin: 0;
@@ -66,12 +77,27 @@ html {
     height: 5vh;
     border-radius: 50%;
     border: 1px solid rgb(00, 255, 130);
-    transition: height 1s;
+    transition: all 1s;
     transition-timing-function: ease-in;
 }
 
+.lineMain {
+
+    position: absolute;
+    opacity: 0.;
+    left: 50px;
+    bottom: 40px;
+    width: 1px;
+    height: 0vh;
+    border-radius: 50%;
+    border: 1px solid violet;
+    transition: all 1s;
+    transition-timing-function: ease-in;
+}
+
+
 .roundEffect{
-    bottom: 80vh;
+    bottom: 81vh;
     transition: all 1.3s;
     opacity: 1;
 }
@@ -81,13 +107,28 @@ html {
     box-shadow: 0px 1px 15px 7px violet;
     -webkit-box-shadow: 0px 1px 15px 7px violet;
     -moz-box-shadow: 0px 1px 15px 7px violet;
-
 }
 
 .lineEffect{
 
-    height: 77vh;
-    opacity: 1;
+    height: 78vh;
+    opacity: 0.5;
+}
+
+.underLine {
+
+    width: 600px;
+    opacity: 0.8;
+    height: 1px;
+    border-radius: 50%;
+    border-bottom: violet 1px solid;
+    transition: all 1s;
+    transition-timing-function: ease-in;
+}
+
+.underLine:hover {
+
+    width: 100px;
 }
 
 
@@ -105,8 +146,10 @@ html {
 
 .removeLinkStyleLink {
 
-    color:  rgb(00, 255, 130);
+    color: violet;
     text-decoration: inherit;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .styleLink {
@@ -163,12 +206,72 @@ html {
     opacity: 1;
 }
 
-
-.backGroundAboutMe {
+.backGroundTransformText {
 
     height: 100vh;
     width: 100%;
-    background-color: rgba(54, 54, 54, 0.7);
+    background: rgba(36, 90, 167, 0.1);
+    background: radial-gradient(circle, rgba(148, 133, 175, 0.1) 05%, rgba(54, 54, 54,0.95) 20%),url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+
+    right: 30px;
+    z-index: 2;
+    position: fixed;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    color: rgb(231, 160, 231);
+}
+
+header nav ul li {
+    
+    opacity: 0.8;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 0px 0px 0px violet;
+    transition: all 0.2s;
+}
+
+header nav ul li a {
+
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+
+header nav ul li:hover{
+
+    text-shadow: 0px 2px 10px violet;
+    opacity: 1 !important;
+   
+}
+
+.wrapIcons {
+
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.wrapIcons i {
+
+    color: rgb(72, 226, 152);
+    opacity: 0.8;
+    
+}
+
+.icon {
+
+    margin-left: 10px;
+    color:violet;
 }
 
 .wrapBurger{
@@ -177,57 +280,54 @@ html {
     position: fixed;
     z-index: 2;
     left: -20px;
-    padding-top: 10px;
+    top: 15px;
 }
 
 .burgerLine1 {
 
-    width: 30px;
-    border-bottom: whitesmoke 3px solid;
+    width: 20px;
+    border-bottom: blanchedalmond 2px solid;
     margin-bottom: 5px;
-    height: 7px;
     transition: width 0.1s;
 }
 
 .burgerLine2 {
 
-    width: 30px;
-    border-bottom: whitesmoke 3px solid;
+    width: 20px;
+    border-bottom: blanchedalmond 2px solid;
     margin-bottom: 5px;
-    height: 7px;
     transition: width 0.3s;
 }
 
 .burgerLine3 {
 
-    width: 30px;
-    border-bottom: whitesmoke 3px solid;
+    width: 20px;
+    border-bottom: blanchedalmond 2px solid;
     margin-bottom: 5px;
-    height: 7px;
     transition: width 0.5s;
 }
 
 .burgerLine1Effet{
 
     background-color: rgb(00, 255, 130) ;
-    width : 7px;
-    height: 7px;
+    width : 5px;
+    height: 5px;
     border-bottom: 0;
     border-radius: 50%;
 }
 .burgerLine2Effet{
 
     background-color:  rgb(132, 0, 255);
-    width : 7px;
-    height: 7px;
+    width : 5px;
+    height: 5px;
     border-bottom: 0;
     border-radius: 50%;
 }
 .burgerLine3Effet{
 
     background-color: rgb(255, 0, 106) ;
-    width : 7px;
-    height: 7px;
+    width : 5px;
+    height: 5px;
     border-bottom: 0;
     border-radius: 50%;
 }
@@ -238,16 +338,137 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .outterAbout {
     
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    height: 95vh;
     width: 100%;
+}
+
+.skillsOutter {
+
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.skillsOutter ul {
+
+    list-style: none;
+}
+
+.tag {
+
+    color: blanchedalmond;
+    font-family: 'Goldman', cursive;
+    font-size: 1.9vh !important;
+    line-height: 1.5em;
+    box-shadow: 0px 1px 5px 1px rgba(41, 40, 40, 0.53);
+    padding: 5px 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 5% ;
+}
+
+.tag i {
+
+    margin-right: 5px;
+}
+
+.skillsOutter h1 {
+
+    font-family: 'Righteous', cursive;
+    font-size: 2.7em;
+    letter-spacing: 3px;
+    color:rgba(238, 130, 238, 1);
+}
+
+.footerCard {
+
+    z-index: 3;
+    border: 1px solid rgba(27, 26, 26, 0.405);
+    background-color: rgba(61, 54, 54, 0.8);
+    position: absolute;
+    color: blanchedalmond;
+    padding-left: 5px   ;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    transition: height 0.3s ease-in;
+    cursor: pointer;
+}
+
+.unVisible, .unVisibleLink {
+    opacity: 0;
+    position: absolute;
+    transition: al 0.5s;
+}
+
+.footerCard:hover .unVisible {
+    position: absolute;
+    opacity: 1;
+    bottom:25%;
+    transition: all 0.5s;
+}
+
+.footerCard:hover .unVisibleLink {
+    position: absolute;
+    opacity: 1;
+    bottom:1%;
+    transition: all 0.5s;
+
+}
+
+.footerCard:hover .iconRotate {
+
+    color: violet;
+    transform: rotate(90deg)
+}
+
+.footerCard:hover  {
+    height: 150px;
+}
+
+.titleFoot {
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: rgba(47, 241, 96, 0.863);
+    font-family: 'Righteous', cursive;
+}
+
+.pFoot {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
     
 }
+
+.iconRotate {
+
+    transform: rotate(0deg);
+}
+
+.iconRotateEffect {
+
+    transform: rotate(90deg);
+}
+
+
 .wrapContact {
 
     display: flex;
@@ -261,13 +482,13 @@ html {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+   
 }
 
 .wrapAboutMe {
-
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
+    padding-top: 100px;
 }
 
 .cardBody {
@@ -279,7 +500,7 @@ html {
 
 .titre {
 
-    font-size: 3.5em;
+    font-size: 4em;
     letter-spacing: 3px;
     font-family: 'Righteous', cursive;
     margin-left: 60px;
@@ -288,7 +509,7 @@ html {
 
 .titreAbout {
 
-    color: rgb(27, 20, 20);
+    color: rgb(00, 255, 130);
     font-size: 2.8em;
     letter-spacing: 3px;
     font-family: 'Righteous', cursive;
@@ -297,6 +518,7 @@ html {
 
 .titreNom {
 
+    font-size: 1.2em;
     color: rgb(00, 255, 130);
     margin-left: 10px;
     opacity: 0.8;
@@ -306,7 +528,7 @@ html {
 
 .titreNomEffet {
     
-    text-shadow: 0 0 4px rgb(143, 247, 59) ,0 0 5px rgb(143, 247, 59) , 0 0 6px rgb(143, 247, 59);
+    text-shadow: 0 0 3px rgb(143, 247, 59) ,0 0 5px rgb(143, 247, 59) , 0 0 15px rgb(143, 247, 59);
     transform: scale(2);
     transition: text-shadow 0.5s;
     opacity: 0.9;
@@ -319,6 +541,7 @@ html {
     transform: scale(0.0);
     transition: all 0.6s;
     transition-timing-function:ease-in;
+    margin-left: 60px;
 }
 
 .effectScale {
@@ -358,7 +581,7 @@ html {
 .ballon1{
 
     clip-path: circle(50% at 50% 50%);
-    background-color: rgb(132, 0, 255) ;
+    background-color: rgb(148, 34, 255) ;
     height: 28px;
     width: 28px;
     opacity: 0.8;
@@ -377,24 +600,19 @@ html {
     transition: all 250s linear;
 }
 
-.souTitre {
-
-    color: blanchedalmond;
-    margin-left: 60px;
-}
-
-
 .navMenu {
     list-style: none;
     margin-top: 0;
     transition: margin-top 1.5s;
     position: fixed;
     z-index: 2;
+    visibility: hidden;
 }
 
 .marginTopNav {
 
     margin-top: 100px;
+    visibility: visible;
 }
 
 .navLink {
@@ -436,15 +654,17 @@ html {
 }
 
 .wrapArrow {
-
     position: absolute;
     bottom: 190px;
 }
 
 
 .mediaCar {
-
     display: block;
     height: 300px;
     width: 95%;
+}
+
+.card {
+    background-color: rgba(205, 255, 230, 0.308);
 }

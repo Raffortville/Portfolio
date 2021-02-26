@@ -9,6 +9,7 @@ const ball2 = document.querySelector('.ballon2');
 const souTitre = document.querySelectorAll(".souTitre");
 const line = document.querySelector('.line')
 const round = document.querySelector('.round')
+const headerLinks = document.querySelectorAll(".headerNavLink")
 
 window.addEventListener('load',() => {
 
@@ -26,15 +27,13 @@ window.addEventListener('load',() => {
         addEffectClass(ball2,"effect");
       
         addEffectClass(round,'borderRoundEffect')
+
         souTitre.forEach(elmt => addEffectClass(elmt,'effectScale'))
 
-        
     }, 2000);
  
     addEffectClass(backGround,"backGroundTransform");
-
     infiniteEffect(titre,"titreNomEffet",1800,2000);
-
     
 });
 
@@ -106,8 +105,9 @@ const effetMenuBurger = () => {
 
 // mark anchor nav menu //
 
-const links = document.querySelectorAll(".removeLinkStyle")
+const links = document.querySelectorAll("[data-link]")
 const titreAbout = document.querySelectorAll('.titreAbout')
+const lineMain = document.querySelector('.lineMain')
 
 titreAbout.forEach(titre => titre.addEventListener('click', (e)=> { 
 
@@ -115,6 +115,8 @@ titreAbout.forEach(titre => titre.addEventListener('click', (e)=> {
     effetMenuBurger()
     markAnchorNavMenu(currentPage)
 
+    addEffectClass(lineMain,"lineEffect")
+    
 }))
 
 links.forEach(link => {
@@ -131,4 +133,14 @@ const markAnchorNavMenu = (currentPage) => {
 
     links.forEach(link => {link.innerHTML === currentPage ? link.style.color='rgb(00, 255, 130) ': link.style.color="inherit" })
 }
+
+
+
+
+
+
+
+
+
+
 
