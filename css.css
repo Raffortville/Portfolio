@@ -1,22 +1,18 @@
 @font-face {
-
     font-family: 'Righteous', cursive;
-    src:url('/Righteous-Regular.ttf') format('truetype');
+    src:url('/Righteous-Regular.ttf') format('truetype')
 }
 
 
 .textP {
-
     font-size: 1.1em !important;
 }
 
 .borderTest {
-
     border:  1px solid blanchedalmond;
 }
 
 body {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +21,6 @@ body {
 }
 
 html {
-
     scroll-behavior: smooth;
 }
 
@@ -43,7 +38,6 @@ html {
 }
 
 .round {
-
     position: absolute;
     opacity: 0.2;
     bottom: 35px;
@@ -58,7 +52,6 @@ html {
 }
 
 .borderRound {
-
     border: 1px solid violet;
     box-shadow: 0px 0px 0px 0px violet;
     -webkit-box-shadow: 0px 0px 0px 0px violet;
@@ -381,16 +374,13 @@ header nav ul li:hover{
     margin-right: 5px;
 }
 
-.skillsOutter h1 {
-
-    font-family: 'Righteous', cursive;
+.skillsOutter h1 {  
     font-size: 2.7em;
     letter-spacing: 3px;
     color:rgba(238, 130, 238, 1);
 }
 
 .footerCard {
-
     z-index: 3;
     border: 1px solid rgba(27, 26, 26, 0.405);
     background-color: rgba(61, 54, 54, 0.8);
@@ -444,7 +434,6 @@ header nav ul li:hover{
     font-size: 1em;
     letter-spacing: 2px;
     color: rgba(47, 241, 96, 0.863);
-    font-family: 'Righteous', cursive;
 }
 
 .pFoot {
@@ -502,7 +491,6 @@ header nav ul li:hover{
 
     font-size: 4em;
     letter-spacing: 3px;
-    font-family: 'Righteous', cursive;
     margin-left: 60px;
     cursor: pointer;
 }
@@ -512,7 +500,6 @@ header nav ul li:hover{
     color: rgb(00, 255, 130);
     font-size: 2.8em;
     letter-spacing: 3px;
-    font-family: 'Righteous', cursive;
     cursor: pointer;
 }
 
@@ -625,15 +612,12 @@ header nav ul li:hover{
 
     font-size: 1.8em;
     margin-top: 15px;
-    font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     opacity: 1;
     transition-duration: 0.8s;
 }
 
 .titreBio {
-
-    font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     margin-top: 10px;
 }
